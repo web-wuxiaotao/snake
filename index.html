@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src='js/hanshu.js'></script>
+	<script src='js/animate.js'></script>
+	<script src='js/tanchishe.js'></script>
+</head>
+<style>
+	body{
+		margin: 0;
+		padding: 0;
+		position: relative;
+	}
+	#box{
+		width: 625px;
+		height: 625px;
+		/*border: 1px solid #333;*/
+		margin: 0 auto 25px;
+		background: #ccc;
+		border-top: 40px solid #fff;
+		background: url(img/index.jpg);
+		background-size: 1000px 1000px;
+		background-position: -200px -150px;
+	}
+	#box div{
+		width: 25px;
+		height:25px;
+		box-sizing:border-box;
+		border: 1px solid rgba(3,3,3,0.1);
+		float: left;
+	}
+	#box .she{
+		background: blue;
+		border-radius: 20%;
+	}
+/*	#box .head:before{
+		content: "";
+		display: block;
+		width: 5px;
+		height: 5px;
+		background: red;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+	}*/
+	#box .food{
+		background: red;
+		border-radius: 40%;
+	}
+	.game{
+		width: 500px;
+		height: 40px;
+		margin: 0 auto;
+	}
+	.game .start{
+		float: left;
+		width: 150px;
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		background: #e4e4e4;
+		font-size: 24px;
+		color: #333;
+		text-decoration: none;
+		font-family: "楷体";
+		font-weight: bold;
+		margin:0 50px;
+	}
+	.game .pause{
+		float: left;
+		width: 150px;
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		background: #e4e4e4;
+		font-size: 24px;
+		color: #333;
+		text-decoration: none;
+		font-family: "楷体";
+		font-weight: bold;
+		margin:0 50px;
+	}
+	.game a:hover{
+		background:rgba(255,0,0,0.6) ;
+		color: #fff;
+	}
+	#start{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba(0,0,0,0.5);
+	}
+	#start a{
+		display: block;
+		width: 500px;
+		height: 290px;
+		background: url(img/she.jpg);
+		margin: 170px auto;
+	}
+	#over{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba(0,0,0,0.5);
+		display: none;
+	}
+	#over .over{
+		display: block;
+		width: 500px;
+		height: 290px;
+		margin: 170px auto;
+		overflow: hidden;
+		position: relative;
+	}
+	#over .over img{
+		width: 500px;
+		position: absolute;
+		top: -120px;
+		left: 0;
+	}
+</style>
+<body>
+	<div id="start">
+		<a href="Javascript:;"></a>
+	</div>
+	<div id='box'>
+		
+	</div>
+	<div class="game">
+		<a href="Javascript:;" class="start">开始</a>
+		<a href="Javascript:;" class="pause">暂停</a>
+	</div>
+	<div id="over">
+		<a href="" class="over">
+			<img src="img/over.png" alt="">
+		</a>
+	</div>
+</body>
+</html>
